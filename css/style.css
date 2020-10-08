@@ -1,0 +1,141 @@
+:root {
+  --Blue: rgb(79, 125, 243);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-top: 86px;
+}
+
+.coming-soon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--Gray);
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  color: var(--Very-Dark-Blue);
+}
+
+form {
+  margin-top: 15px;
+}
+
+.input {
+  width: 420px;
+  height: 56px;
+  margin-right: 10px;
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50px;
+  box-sizing: border-box;
+  outline: none;
+}
+.input::placeholder {
+  padding-left: 30px;
+  font-size: 16px;
+  color: var(--Pale-Blue);
+  opacity: 0.6;
+}
+
+.button {
+  width: 200px;
+  height: 56px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--Blue);
+  border-radius: 50px;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(79, 125, 243, 0.8);
+  box-shadow: 0 1px 8px 0px var(--Blue);
+}
+
+.warning {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--Light-Red);
+  position: absolute;
+  top: 236px;
+  left: 25px;
+  opacity: 0;
+}
+
+.image-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 640px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  width: 160px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+footer p {
+  font-size: 13px;
+  color: var(--Gray);
+  margin-bottom: 25px;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
