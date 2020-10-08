@@ -17,20 +17,18 @@
     margin-bottom: 15px;
   }
 
-
   .button {
     width: 400px;
   }
-
 
   .warning {
     font-size: 13px;
     font-style: italic;
     color: var(--Light-Red);
     position: relative;
-    top: -78px;
-    left: 0px;
-    opacity: 0;
+    top: -5px;
+    left: 90px;
+    margin-bottom: 20px;
   }
 
   .image-container img {
@@ -40,6 +38,24 @@
 }
 
 @media screen and (max-width: 550px) {
+  
+  .modal {
+    width: 350px;
+    height: 220px;
+  }
+
+  .modal h2 {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .modal p {
+    padding: 0 30px;
+    font-size: 20px;
+    color: var(--Gray);
+    font-weight: 600;
+  }
 
   h1 {
     font-size: 30px;
@@ -56,9 +72,12 @@
     height: 56px;
   }
 
-
   .button {
     width: 320px;
+  }
+
+  .warning {
+    left: 50px;
   }
 
   .image-container {

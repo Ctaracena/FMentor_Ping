@@ -15,20 +15,28 @@
 <body>
 
   <main>
+    <div class="overlay">
+      <div class="modal">
+        <div class="close-container">
+          <img class="close" src="images/close.png" alt="close window">
+        </div>
+        <h2>Thanks!</h2>
+        <p> Your email has been registered, soon you'll receive news from Us.</p>
+      </div>
+    </div>
     <header>
       <img src="images/logo.svg" alt="Ping logo">
     </header>
 
     <section class="coming-soon">
+      
       <h1>We are launching <span>soon!</span></h1>
       <p>Subscribe and get notified</p>
-      <form action="email">
-        <label for="email">
-          <input type="email" placeholder="Your email address..." name="email" class="input">
-          <input type="submit" value="Notify Me" class="button">
-        </label>
+      <form name="email">
+          <input type="email" placeholder="Your email address..." name="text" class="input">
+          <p class="warning">Please provide a valid email address</p>
+          <input type="button" value="Notify Me" class="button">
       </form>
-      <p class="warning">Please provide a valid email address</p>
     </section>
 
     <div class="image-container">
@@ -39,9 +47,9 @@
 
   <footer>
     <div class="social-icons">
-      <a href="#"><img src="images/icons8-facebook-24.png"alt="facebook"></a> 
-      <a href="#"><img src="images/icons8-twitter-squared-24.png" alt="twitter"></a>
-      <a href="#"><img src="images/icons8-instagram-24.png" alt="instagram"></a>
+      <a href="#"><img src="images/facebook .png"alt="facebook"></a> 
+      <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="instagram"></a>
     </div>
     <p>&copy; Copyright Ping. All rights reserved</p>
     <div class="credits">
@@ -51,5 +59,6 @@
       </p>
     </div>  
   </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
